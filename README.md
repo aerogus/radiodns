@@ -4,6 +4,10 @@ Simple client du protocole `radio-dns`
 
 ![Logo Radio DNS](logo.jpg)
 
+Le développement de cet outil a suivi la procédure décrite ici :
+
+https://radiodns.org/campaigns/project-logo/walkthrough-finding-radio-station-logos/
+
 ## Usage
 
 Requête type FM
@@ -94,25 +98,47 @@ bearers    :
 
 ## Couverture
 
-Toutes les radios françaises ne sont pas inscrites à ce programme.
+Toutes les radios françaises ne sont pas inscrites à ce programme. À ce jour j'ai eu des résultats concluants pour :
 
-À ce jour j'ai eu des résultats concluants pour :
-
-| Nom       | Mode | Fréquence | Pi   |
-| --------- | ---- | --------- | ---- |
-| OÜI FM    | FM   |     102.3 | F21D |
-| NOSTALGIE | FM   |      90.4 | F218 |
-| CHERIE    | FM   |      91.3 | F224 |
-| RIRE      | FM   |      97.4 | F226 |
-| NRJ       | FM   |     100.3 | F220 |
+| Nom            | Mode | Fréquence | Pi   |
+| -------------- | ---- | --------- | ---- |
+| OÜI FM         | FM   |     102.3 | F21D |
+| NOSTALGIE      | FM   |      90.4 | F218 |
+| CHERIE         | FM   |      91.3 | F224 |
+| RIRE           | FM   |      97.4 | F226 |
+| NRJ            | FM   |     100.3 | F220 |
+| FRANCE INTER   | FM   |      87.8 | F201 |
+| FRANCE CULTURE | FM   |      89.6 | F202 |
+| FRANCE MUSIQUE | FM   |      90.7 | F203 |
+| FIP            | FM   |     105.1 | F204 |
+| FRANCE INFO    | FM   |     105.5 | F206 |
+| MOUV'          | FM   |      92.1 | F208 |
+| FRANCE BLEU    | FM   |     107.1 | F20A |
 
 | Nom       | Mode | EnsembleId | ServiceId |
 | --------- | ---- | ---------- | --------- |
 | OÜI FM    | DAB  | F038       | F21D      |
 
+Ce qui correspond à ce qui est mentionné ici : https://radiodns.org/coverage/#FRA
+
+Pratique pour théoriquement récupérer les logos des radios sauf que les éditeurs ne les mettent pas à jour. Par exemple pour Radio France :
+
+- ![Logo France Inter issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/2bce08b2-7364-49eb-8688-3d7dee3e6199.png)
+- ![Logo France Culture issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/51882c9b-1c70-4b79-b39b-4a1e4bd0384c.png)
+- ![Logo France Musique issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/6dc5e85d-af25-4e7c-8b96-2c78b4cd4096.png)
+- ![Logo FIP issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/13533325-8a9f-4fde-badd-43edc5a7abe8.png)
+- ![Logo France Info issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/28fdd176-1e4f-4afa-859f-23c5ca39fb1c.png)
+- ![Logo Mouv' issu de RadioDNS](http://static.frsrf.radio.-ebu.io/128x128/a122ae78-0a3c-4aed-8e5f-75752dfc3828.png)
+- ![Logo France Bleu issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/106f038f-d113-49dc-92fc-e2ea5f4996bc.png)
+
+## Exemple de xml
+
+- http://nostalgiefrance.nrjaudio.fm/radiodns/spi/3.1/SI.xml
+- http://10230.f21d.fe1.fm.radiodns.org/radiodns/spi/3.1/SI.xml
+- http://frsrf.epg.radio.ebu.io/radiodns/spi/3.1/SI.xml
+
 ## Ressources
 
-- https://radiodns.org/campaigns/project-logo/walkthrough-finding-radio-station-logos/
 - https://www.etsi.org/deliver/etsi_ts/103200_103299/103270/01.04.01_60/ts_103270v010401p.pdf
 - https://www.etsi.org/deliver/etsi_ts/102800_102899/102818/03.05.01_60/ts_102818v030501p.pdf
 - https://www.etsi.org/deliver/etsi_ts/101400_101499/101499/03.02.01_60/ts_101499v030201p.pdf

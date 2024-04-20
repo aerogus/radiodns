@@ -310,24 +310,19 @@ class RadioDNS
      */
     public function getXmlUrl(): string
     {
-        $records = $this->dns();
-        if (count($records) === 0) {
-            throw new \Exception('no dns records');
+        $fqdn_records = dns_get_record($this->getFqdn(), DNS_CNAME);
+        if (count($fqdn_records) === 0) {
+            throw new \Exception('no fqdn dns records');
         } else {
-            // ce n'est pas toujours le dernier record qui répond
-            foreach ($records as $record) {
-                $url = 'http://' . $record['host'] . '/radiodns/spi/3.1/SI.xml';
-                //echo "try " . $url . "\n";
-                $headers = @get_headers($url);
-                if ($headers !== false) {
-                    //echo "-> OK -> " . $headers[0] . "\n";
-                    if (strpos($headers[0], '200') !== false) {
-                        //echo "FOUND: " . $url . "\n";
-                        return $url;
-                    }
-                } else {
-                    //echo "-> KO\n";
-                }
+            $fqdn_last_record = array_pop($fqdn_records);
+            $metadata_nslookup = '_radioepg._tcp.' . $fqdn_last_record['target'];
+            $srv_records = dns_get_record($metadata_nslookup, DNS_SRV);
+            if (count($srv_records) === 0) {
+                throw new \Exception('no srv dns records for ' . $metadata_nslookup);
+            } else {
+                $host = $srv_records[0]['target'];
+                $url = 'http://' . $host . '/radiodns/spi/3.1/SI.xml';
+                return $url;
             }
             throw new \Exception('xml not found');
         }
@@ -358,13 +353,5 @@ class RadioDNS
         $args[] = 'org';
 
         return implode('.', $args);
-    }
-
-    /**
-     * @return array<mixed>
-     */
-    protected function dns(): array
-    {
-        return dns_get_record($this->getFqdn());
     }
 }
