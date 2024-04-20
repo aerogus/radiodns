@@ -6,14 +6,21 @@ Simple client du protocole `radio-dns`
 
 ## Usage
 
+Requête type FM
+
 ```bash
 ./rdns.php --ecc E1 --mode FM --frequency 102.3 --pi F21D
 ```
+
+Requête type DAB
 
 ```bash
 ./rdns.php --ecc E1 --mode DAB --ensemble-id F038 --service-id F21D
 ```
 
+Affichage
+
+```bash
 xmlUrl     : http://10230.f21d.fe1.fm.radiodns.org/radiodns/spi/3.1/SI.xml
 shortName  : OUI FM
 mediumName : OUI FM
@@ -84,7 +91,6 @@ bearers    :
  - dab:fe1.f056.f21d.0 cost=2
  - http://ouifm.ice.infomaniak.ch/ouifm-high.mp3 cost=3
 ```
-
 
 ## Couverture
 
