@@ -134,7 +134,7 @@ Pratique pour théoriquement récupérer les logos des radios sauf que les édit
 ## Exemple de xml
 
 - http://nostalgiefrance.nrjaudio.fm/radiodns/spi/3.1/SI.xml
-- http://10230.f21d.fe1.fm.radiodns.org/radiodns/spi/3.1/SI.xml
+- http://radiovis.radio-screen.com/radiodns/spi/3.1/SI.xml
 - http://frsrf.epg.radio.ebu.io/radiodns/spi/3.1/SI.xml
 
 ## Ressources
