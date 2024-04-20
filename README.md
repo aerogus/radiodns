@@ -121,7 +121,7 @@ Toutes les radios françaises ne sont pas inscrites à ce programme. À ce jour 
 
 Ce qui correspond à ce qui est mentionné ici : https://radiodns.org/coverage/#FRA
 
-Pratique pour théoriquement récupérer les logos des radios sauf que les éditeurs ne les mettent pas à jour. Par exemple pour Radio France :
+Pratique pour théoriquement récupérer les logos des radios sauf que les éditeurs ne les mettent pas toujours à jour. Par exemple pour Radio France :
 
 - ![Logo France Inter issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/2bce08b2-7364-49eb-8688-3d7dee3e6199.png)
 - ![Logo France Culture issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/51882c9b-1c70-4b79-b39b-4a1e4bd0384c.png)
