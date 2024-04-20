@@ -128,7 +128,7 @@ Pratique pour théoriquement récupérer les logos des radios sauf que les édit
 - ![Logo France Musique issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/6dc5e85d-af25-4e7c-8b96-2c78b4cd4096.png)
 - ![Logo FIP issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/13533325-8a9f-4fde-badd-43edc5a7abe8.png)
 - ![Logo France Info issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/28fdd176-1e4f-4afa-859f-23c5ca39fb1c.png)
-- ![Logo Mouv' issu de RadioDNS](http://static.frsrf.radio.-ebu.io/128x128/a122ae78-0a3c-4aed-8e5f-75752dfc3828.png)
+- ![Logo Mouv' issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/a122ae78-0a3c-4aed-8e5f-75752dfc3828.png)
 - ![Logo France Bleu issu de RadioDNS](http://static.frsrf.radio.ebu.io/128x128/106f038f-d113-49dc-92fc-e2ea5f4996bc.png)
 
 ## Exemple de xml
