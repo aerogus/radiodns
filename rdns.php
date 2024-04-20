@@ -64,6 +64,7 @@ if (!is_null($service_id)) {
 }
 
 try {
+    echo "fqdn       : " . $rdns->getFqdn() . "\n";
     echo "xmlUrl     : " . $rdns->getXmlUrl() . "\n";
     echo "shortName  : " . $rdns->getShortName() . "\n";
     echo "mediumName : " . $rdns->getMediumName() . "\n";
